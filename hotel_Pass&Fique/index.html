@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Hospedagem</title>
+    <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Reserve sua Estadia</h1>
+        <form action="#" method="post">
+            <div class="form-section">
+                <h2>Informações Pessoais</h2>
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone">
+                </div>
+
+                <div class="form-group">
+                    <label for="documento">CPF/CNPJ:</label>
+                    <input type="text" id="documento" name="documento">
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Detalhes da Hospedagem</h2>
+                <div class="form-group">
+                    <label for="tipo_hospedagem">Tipo de Hospedagem:</label>
+                    <select id="tipo_hospedagem" name="tipo_hospedagem">
+                        <option value="hotel">Hotel</option>
+                        <option value="pousada">Pousada</option>
+                        <option value="apartamento">Apartamento</option>
+                        <option value="casa">Casa</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                    <label for="Quatidades_de_Camas">Quatidades de Camas</label>
+                   <select id="Quatidades de Camas" name="Quatidades de Camas">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="data_checkin">Data de Check-in:</label>
+                    <input type="date" id="data_checkin" name="data_checkin" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="data_checkout">Data de Check-out:</label>
+                    <input type="date" id="data_checkout" name="data_checkout" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="numero_adultos">Número de Adultos:</label>
+                    <input type="number" id="numero_adultos" name="numero_adultos" min="1" value="1">
+                </div>
+
+                <div class="form-group">
+                    <label for="numero_criancas">Número de Crianças:</label>
+                    <input type="number" id="numero_criancas" name="numero_criancas" min="0" value="0">
+                </div>
+
+                <div class="form-group">
+                    <label for="preferencias">Preferências (opcional):</label>
+                    <textarea id="preferencias" name="preferencias" rows="3"></textarea>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Informações Adicionais</h2>
+                <div class="form-group">
+                    <label for="termos">
+                        <input type="checkbox" id="termos" name="termos" required>
+                        Concordo com os <a href="#">Termos e Condições</a>.
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        Desejo receber novidades e promoções.
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-button">Reservar Agora</button>
+        </form>
+    </div>
+</body>
+</html>
